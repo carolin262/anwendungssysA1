@@ -63,16 +63,15 @@ body {
 }
 
 /*navigation menu*/
-ul {
+div.menu ul {
     list-style-type: none;
     margin: 0;
 }
-
-li {
+div.menu ul li{ 
     float: right;
 }
 
-    li a {
+    div.menu ul li a{
         display: block;
 		padding-top: 6px;
 		padding-bottom: 18px;
