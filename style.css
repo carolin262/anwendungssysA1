@@ -223,7 +223,9 @@ Button.inButton {
     border-radius: 6px;
     color: white;
     text-decoration: none;
-    min-width: 100%
+    min-width: 100%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: bold;
 }
 
     Button.inButton:hover {
