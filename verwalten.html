@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <title>AnwSys DemoApp</title>
+    <link rel="stylesheet" type="text/css" href="./style1.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js" async></script>
@@ -36,52 +37,35 @@
 			</div>
 		</div>
     </div>
-	
+
     <div class="main">
-        <div class="content">
-           <h2>Geräte</h2>
-            <ul>
-                <li><a href="./detail1.html">AB12345678</a></li>
-                <li><a href="./detail2.html">AB32942628</a></li>
-                <li><a href="./detail3.html">AB78988293</a></li>
-            </ul>
-           <h2>Übersicht</h2>
-			<br/>
-			<p><b>Schritt 1</b><br/>
-			Stellen Sie konzeptionell dar, welche Seiten ihre Webapplikation umfassen wird, welche
-			Funktionen jeweils auf diesen zur Verfügung stehen und welche Informationen und
-			Interaktionselemente darauf vorhanden sein werden.
-			Erläutern Sie zudem an welcher Stelle sie welche Technologie einsetzen werden.
-			Überlegen Sie sich außerdem ein einfaches Design für Ihre Applikation.
-			<br/><br/>
-			<b>Schritt 2</b><br/>
-			Beschreiben Sie Ihre Seiten als HTML-Dokumente. Wählen Sie geeignete Elemente um
-			Seitenbestandteile sinnvoll auszuzeichnen. Begründen Sie kurz, warum Sie sich für die
-			gewählten Elemente entschieden haben.
-			<br/><br/>
-			<b>Schritt 3</b><br/>
-			Komplettieren Sie das in Schritt 1 entworfene Design mit Hilfe von CSS. Dokumentieren Sie
-			ihr Vorgehen.
-			<br/><br/>
-			<b>Schritt 4</b><br/>
-			Implementieren Sie dynamische Bestandteile und Funktionen mit Hilfe von JavaScript. Gerne
-			dürfen Sie jQuery verwenden. Erläutern Sie die so realisierten Features und ihren Ansatz für
-			die Umsetzung.
-			<br/><br/>
-			<b>Schritt 5</b><br/>
-			Dokumentieren Sie die Ergebnisse Ihrer Arbeit in einer Präsentation (Powerpoint o.ä.). Diese
-			Präsentation muss für das Gesamtverständnis Ihrer Lösung genügen, daher sollten relevante
-			Codeauszüge enthalten sein. In der Präsentation müssen außerdem mindestens vier (4)
-			unterschiedliche Nutzerkennungen (vgl. Aufgabenstellung) zu sehen sein, die Ihre
-			tatsächlichen Namen/Matrikelnummern der Gruppe enthalten.
-			<br/><br/>
-			<b>Schritt 6</b><br/>
-			Exportieren Sie die Präsentation als PDF-Dokument. Packen Sie ihren kompletten Code und
-			alle zugehörige Artefakte (z.B. Bilder) zudem als .zip oder .7z Datei.
-			Reichen Sie die Präsentation und die .zip-Datei mit Hilfe des ISIS-Systems ein. Bewertet wird
-			nur diese Präsentation! Der Quellcode dient dabei als Referenz und Nachweis der Leistung.
-			Es genügt, wenn die Einreichung durch ein Gruppenmitglied erfolgt.<br />
-			Deadline für die Abgabe per Upload: <b>28.05.2017, 23:55</b>.</p>
+      <div class="content">
+<table>
+ <tr>
+   <th>Gerätekennung</th>
+   <th>Bild</th>
+   <th>Max. Belastung</th>
+   <th>Auswählen</th>
+ </tr>
+ <tr>
+   <td><a href="detailansicht1.html">AB05694241</a></td>
+   <td><img src="./images/smartmeter.png" alt="SmartMeter Bild" width="140" height="100"/></td>
+   <td>80</td>
+   <td><a href="detailansicht1.html">Detailansicht</a></td>
+ </tr>
+ <tr>
+   <td><a href="detailansicht2.html">ZU45283491</td>
+   <td><img src="./images/smartmeter.png" alt="SmartMeter Bild" width="140" height="100"/></td>
+   <td>60</td>
+   <td><a href="detailansicht2.html">Detailansicht</a></td>
+ </tr>
+ <tr>
+   <td><a href="detailansicht3.html">BG41200078</td>
+   <td><img src="./images/smartmeter.png" alt="SmartMeter Bild" width="140" height="100"/></td>
+   <td>100</td>
+   <td><a href="detailansicht3.html">Detailansicht</a></td>
+ </tr>
+</table>
         </div>
     </div>
 
@@ -90,7 +74,7 @@
 			<div class="copyright">
 				© Copyright 2017 by <b class="footerFont">Group 46</b>
 			</div>
-			<div class="toTop"> 
+			<div class="toTop">
 				<a class="ttop" href="#">Go to top</a>
 			</div>
         </div>

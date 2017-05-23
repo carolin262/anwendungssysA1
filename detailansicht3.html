@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AnwSys DemoApp</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js" async></script>
+</head>
+
+<body>
+
+    <div class="headerBg">
+        	<div class="menuBg">
+            <div class="menu">
+                <div class="logoFont">
+                    Group 46
+                </div>
+                <ul>
+                    <li><a href="./source.html">Download</a></li>
+                    <li><a class="activ" href="#">Verwaltung</a></li>
+                    <li><a href="./index.html">Startseite</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+          <table>
+            <tr>
+              <th>Gerätekennung</th>
+              <th>Maximale Belastung</th>
+              <th>Spannung</th>
+              <th>Stromstaerke</th>
+            </tr>
+            <tr>
+              <td>BG41200078</td>
+              <td id="maxstrom">100</td>
+              <td id="spannung"></td>
+              <td id="strom"></td>
+            </tr>
+          </table>
+
+          <img id="bild" src="./images/smartmeter.png" alt="SmartMeter Bild" width="150" height="150"/>
+
+          <div id="warnung">
+            <h3>WARNUNG!</h3>
+            <p>Die Stromstärke liegt oberhalb der zulässigen Maximalbelastung</p>
+          </div>
+
+        <form>
+          Nutzererkennung:<br>
+          <input type="text" name="nutzerkennung"><br>
+          Verbrauchswert (in kWh):<br>
+          <input type="text" name="verbrauchswert"><br><br>
+          <button type="button" id="btnAblesen">Ablesen</button>
+        </form>
+
+        <table id="tableAblesen">
+            <tr>
+              <th>Nutzerkennung</th>
+              <th>Verbrauchswert (in kWh)</th>
+              <th>Datum</th>
+            </tr>
+        </table>
+
+       </div>
+    </div>
+
+    <div class="footerBg">
+        <div class="footer">
+			<div class="copyright">
+				� Copyright 2017 by <b class="footerFont">Group 46</b>
+			</div>
+			<div class="toTop">
+				<a class="ttop" href="#">Go to top</a>
+			</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
