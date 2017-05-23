@@ -7,93 +7,85 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js" async></script>
-<script type="text/javascript" >
-    function zufall(){
-        var z = Math.random();
-        z*=20;
-        z+=220;
-        z= Math.floor(z);
-        var spannung=
-        document.getElementById("spannung");
-        spannung.textContent="aktuelle Spannung: " + z + " U";
-        z = Math.random();
-        z*=105;
-        z+=1;
-        z= Math.floor(z);
-        var strom=
-        document.getElementById("strom");
-        if(z>100){
-            strom.textContent="aktueller Strom: " + z + " A"+ "   ACHTUNG ! Die maximale Belastung ist �berkrass!";
-        }else{
-            strom.textContent="aktueller Strom: " + z + " A";
-        }
-    }
-    function ablesen(){
-        var d = new Date();
-        var datum = d.toISOString();
-        var kwh= document.getElementById("kwh").value;
-        var nutz= document.getElementById("nutz").value;
-        var zeile=document.createElement("tr");
-        var datumzelle=document.createElement("td");
-        var kwhzelle=document.createElement("td");
-        var nutzzelle=document.createElement("td");
-        zeile.appendChild(datumzelle);
-        zeile.appendChild(nutzzelle);
-        zeile.appendChild(kwhzelle);
-        document.getElementById("ablesen").appendChild(zeile);
-        kwhzelle.textContent=kwh 
-        datumzelle.textContent=datum 
-        nutzzelle.textContent=nutz 
-        
-    }
-    </script>
 </head>
 
 <body onload="zufall();">
 
     <div class="headerBg">
-        	<div class="menuBg">
+        <div class="menuBg">
             <div class="menu">
                 <div class="logoFont">
                     Group 46
                 </div>
                 <ul>
-                    <li><a href="./source.html">Download</a></li>
                     <li><a class="activ" href="#">Verwaltung</a></li>
                     <li><a href="./index.html">Startseite</a></li>
                 </ul>
             </div>
         </div>
+        <div class="heading">
+            <p style="font-size:44px">Verwaltung: Smart Meter</p>
+            <div class="subHeading">
+                <div class="subHLeft">
+                    Eine einfache Web Applikation zum verwalten und überwachen von Smart Merters
+                </div>
+                <div class="subHRight">
+                    <a class="button" href="./verwalten.html">Zurück zur Übersicht</a>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="main">
         <div class="content">
-            <h2>Ger&auml;tename:  AB78988293</h2>
-            <img src="./media/image.png"></img>
-            <p> Zul&auml;ssige maximale Belastung: 100 A </p>
-            <p id="spannung"> </p>
-            <p id="strom"> </p>
-        
-                Nutzerkennung:<br>
-              <input type="text" name="Nutzerkennung" value="" id="nutz">
-              <br>
-              KWh: <br>
-              <input type="text" name="KWh" value="" id="kwh">
-              <br><br>
-              <input onclick="ablesen()" type="submit" value="Ablesen">
-            <table id="ablesen">
-            <tr>
-                <th>Datum</th><th>Nutzer</th><th>KWh</th></tr> </table>
-       </div>
+
+            <table class="detail">
+                <tr class="detail">
+                    <td><img src="./media/image.png" height="340px" width="340px"></img></td>
+                    <td>
+                        <h2>Gerätename: AB78988293 </h2>
+                        <p> Zulässige maximale Belastung: 100 A </p>
+                        <p id="spannung"> </p>
+                        <p id="strom"> </p>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <h2>Ablesen</h2>
+            <hr />
+            Nutzerkennung:<br>
+            <input type="text" name="Nutzerkennung" value="" id="nutz">
+            <br />
+            KWh:
+            <br />
+            <input type="text" name="KWh" value="" id="kwh">
+            <br />
+            <br />
+            <input class="inButton" onclick="ablesen()" type="submit" value="Ablesen">
+            <br />
+            <br />
+            <br />
+            <h2>Alle Ablesungen</h2>
+            <hr />
+            <table class="event" id="ablesen">
+                <tr>
+                    <th class="event">Datum</th>
+                    <th class="event">Nutzer</th>
+                    <th class="event">KWh</th>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <div class="footerBg">
         <div class="footer">
-			<div class="copyright">
-				� Copyright 2017 by <b class="footerFont">Group 46</b>
-			</div>
-			<div class="toTop"> 
-				<a class="ttop" href="#">Go to top</a>
-			</div>
+            <div class="copyright">
+                © Copyright 2017 by <b class="footerFont">Group 46</b>
+            </div>
+            <div class="toTop">
+                <a class="ttop" href="#">Go to top</a>
+            </div>
         </div>
     </div>
 
