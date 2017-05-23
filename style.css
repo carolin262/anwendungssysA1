@@ -184,6 +184,24 @@ tr.detail {
     outline: thin solid #24425F;
 }
 
+/*warnings*/
+#warnung {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+    #warnung h3 {
+        color: red;
+    }
+
+#fehlermeldung {
+    font-size: 11px;
+    color: red;
+    margin-top: 10px;
+}
 /*Ablesen form*/
 input {
     border: 1px solid #24425F;
@@ -193,28 +211,29 @@ input {
     margin: 8px 0;
 }
 
-    /*Ablesen button*/
-    input.inButton {
-        background: #325C84;
-        padding: 8px;
-        border: none;
-        border-radius: 6px;
-        color: white;
-        text-decoration: none;
-    }
+/*Ablesen button*/
+Button.inButton {
+    background: #325C84;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    min-width: 100%
+}
 
-        input.inButton:hover {
-            background: #2B4F71;
-        }
+    Button.inButton:hover {
+        background: #2B4F71;
+    }
 
 /*Ablesen results*/
 table.event {
-    padding-left: 10px;
     width: 100%;
 }
 
 th.event {
     text-align: left;
+    padding-left: 10px;
 }
 
 
