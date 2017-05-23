@@ -184,6 +184,10 @@ tr.detail {
     outline: thin solid #24425F;
 }
 
+table.status {
+    max-width:300px;
+}
+
 /*warnings*/
 #warnung {
     display: none;
