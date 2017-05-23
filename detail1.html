@@ -9,7 +9,7 @@
     <script type="text/javascript" src="./script.js" async></script>
 </head>
 
-<body onload="zufall();">
+<body>
 
     <div class="headerBg">
         <div class="menuBg">
@@ -44,9 +44,16 @@
                     <td><img src="./media/image.png" height="340px" width="340px"></img></td>
                     <td>
                         <h2>Gerätename: AB12345678 </h2>
-                        <p> Zulässige maximale Belastung: 75 A </p>
-                        <p id="spannung"> </p>
-                        <p id="strom"> </p>
+                        Maximale Belastung:
+                        <p id="maxstrom">80</p>
+                        Spannung:
+                        <p id="spannung"></p>
+                        Stromstärke:
+                        <p id="strom"></p>
+                        <div id="warnung">
+                            <h3>WARNUNG!</h3>
+                            <p>Die Stromstärke liegt oberhalb der zulässigen Maximalbelastung</p>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -54,25 +61,26 @@
             <br />
             <h2>Ablesen</h2>
             <hr />
-            Nutzerkennung:<br>
-            <input type="text" name="Nutzerkennung" value="" id="nutz">
-            <br />
-            KWh:
-            <br />
-            <input type="text" name="KWh" value="" id="kwh">
-            <br />
-            <br />
-            <input class="inButton" onclick="ablesen()" type="submit" value="Ablesen">
-            <br />
+            <form>
+                Nutzererkennung:
+                <br />
+                <input type="text" name="nutzerkennung" maxlength="4"><br>
+                Verbrauchswert (in kWh):
+                <br />
+                <input type="text" name="verbrauchswert">
+                <br />
+                <br />
+                <button class="inButton" type="button" id="btnAblesen">Ablesen</button>
+            </form>
             <br />
             <br />
             <h2>Alle Ablesungen</h2>
             <hr />
-            <table class="event" id="ablesen">
+            <table class="event" id="tableAblesen">
                 <tr>
+                    <th class="event">Nutzerkennung</th>
+                    <th class="event">Verbrauchswert </th>
                     <th class="event">Datum</th>
-                    <th class="event">Nutzer</th>
-                    <th class="event">KWh</th>
                 </tr>
             </table>
         </div>
