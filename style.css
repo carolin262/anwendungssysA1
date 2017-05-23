@@ -9,30 +9,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
-/*background grid*/
-.headerBg {
-    background-image: url('./media/grid.png');
-    background-size: 6px 6px;
-    z-index: -9998;
+hr {
+    border-top: 1px solid #24425F;
 }
 
-/*background color*/
-body {
-	background-color: #1d2124;
-}
-
-/*background video*/
-.bgVideo {
-    position: fixed;
-    top: -700px;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -9999;
-}
-
-.hide{
-    display: none;
-}
 
 /*===================================
 ============== Header ===============
@@ -40,25 +20,25 @@ body {
 
 /*menu background*/
 .menuBg {
-	background-color: #1d2124;
-	box-shadow: 0px 0px 4px 0px #1d2124;
+    background-color: #325C84;
+    box-shadow: 0px 0px 4px 0px #325C84;
     position: fixed;
     min-width: 100%;
     color: white;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 /*logo Group 46*/
 .logoFont {
     font-size: 26px;
     font-weight: bold;
-	float: left;
+    float: left;
 }
 
 /*mainmenu*/
 .menu {
     margin: auto;
-	padding-top: 20px;
+    padding-top: 20px;
     max-width: 920px;
 }
 
@@ -67,23 +47,24 @@ div.menu ul {
     list-style-type: none;
     margin: 0;
 }
-div.menu ul li{ 
-    float: right;
-}
 
-    div.menu ul li a{
-        display: block;
-		padding-top: 6px;
-		padding-bottom: 18px;
-		margin-left: 16px;
-		margin-right: 16px;
-		color: white;
-        text-decoration: none;
+    div.menu ul li {
+        float: right;
     }
 
-        li a:hover {
-            border-bottom: 4px solid white;
+        div.menu ul li a {
+            display: block;
+            padding-top: 6px;
+            padding-bottom: 18px;
+            margin-left: 16px;
+            margin-right: 16px;
+            color: white;
+            text-decoration: none;
         }
+
+li a:hover {
+    border-bottom: 4px solid white;
+}
 
 .activ {
     border-bottom: 4px solid white;
@@ -91,44 +72,45 @@ div.menu ul li{
 
 /*header heading*/
 .heading {
-	margin: auto;
-	text-align: center;
-    padding-top: 120px;
-    padding-bottom: 90px;
-	color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    color: white;
+    background-color: #24425F;
 }
 
 /*header subheading*/
 .subHeading {
-	margin: auto;
-	max-width: 700px;
+    margin: auto;
+    max-width: 640px;
 }
 
 .subHLeft {
-	max-width: 500px;
-	padding-top: 50px;
-	text-align: left; 
-	float: left;
+    max-width: 400px;
+    padding-top: 30px;
+    text-align: left;
+    float: left;
 }
 
-.subHRight{
-	padding-top: 60px;
-	text-align: right; 
+.subHRight {
+    padding-top: 40px;
+    text-align: right;
 }
 
 /*button*/
 .button {
-	background: #2B6CA3;
+    background: white;
     padding: 16px;
-    border-radius: 10px;
-	color: white;
+    border-radius: 8px;
+    color: black;
     font-weight: normal;
     font-size: 20px;
     text-decoration: none;
 }
 
 a.button:hover {
-    background-color: #00549D;
+    background-color: #f2f2f2;
 }
 
 
@@ -143,24 +125,95 @@ a.button:hover {
 
 /*mainbody content box*/
 .content {
-	background: white;
+    background: white;
     margin: auto;
     max-width: 920px;
     padding: 20px 20px;
     color: black;
-	box-shadow: 0px 0px 4px 0px silver;
+    box-shadow: 0px 0px 4px 0px silver;
 }
 
 
 /*Startseite content as a table*/
-table.content {
-    table-layout: fixed;
+table.landing {
     border-spacing: 0px 30px;
-	box-shadow: 0px 0px 0px 0px silver;
+    box-shadow: 0px 0px 0px 0px silver;
 }
 
-td {
+td.landing {
     vertical-align: top;
+}
+
+/*Verwaltung: Übersichtsseite, divices in a table*/
+table.overview {
+    border-spacing: 0px 16px;
+    text-align: center;
+    width: 100%
+}
+
+tr.overview {
+    outline: thin solid #24425F;
+}
+
+    tr.overview:hover {
+        background-color: #f5f5f5
+    }
+
+td {
+    padding: 10px;
+}
+
+a.detailButton {
+    background: #325C84;
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+    a.detailButton:hover {
+        background: #2B4F71;
+    }
+
+/*Verwaltung: Detailansicht*/
+table.detail {
+    width: 100%
+}
+
+tr.detail {
+    outline: thin solid #24425F;
+}
+
+/*Ablesen form*/
+input {
+    border: 1px solid #24425F;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 8px 0;
+}
+
+    /*Ablesen button*/
+    input.inButton {
+        background: #325C84;
+        padding: 8px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        text-decoration: none;
+    }
+
+        input.inButton:hover {
+            background: #2B4F71;
+        }
+
+/*Ablesen results*/
+table.event {
+    width: 100%;
+}
+
+th.event {
+    text-align: left;
 }
 
 
@@ -170,9 +223,9 @@ td {
 
 /*footer background*/
 .footerBg {
-	background-color: #1d2124;
+    background-color: #325C84;
     min-width: 100%;
-	box-shadow: 0px 0px 4px 0px #1d2124;
+    box-shadow: 0px 0px 4px 0px #325C84;
 }
 
 /*footer box*/
@@ -181,38 +234,38 @@ td {
     padding-bottom: 10px;
     margin: auto;
     max-width: 920px;
-	color: white;
-	font-style:italic;
-	font-size:12px;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
 }
 
 /*copyright position*/
 .copyright {
-	text-align: left;
-	float: left;
+    text-align: left;
+    float: left;
 }
 
 /*footer copyright font*/
 .footerFont {
-	font-style: normal;
-	font-size: 14px;
+    font-style: normal;
+    font-size: 14px;
 }
 
 /*to top position*/
-.toTop{
-	text-align: right; 
+.toTop {
+    text-align: right;
 }
 
 /*to top button*/
 a.ttop {
-	background: white;
-	padding: 6px;
-	border-radius: 4px;
+    background: white;
+    padding: 6px;
+    border-radius: 4px;
     color: black;
-	font-size:10px;
+    font-size: 10px;
     text-decoration: none;
 }
 
-	a.ttop:hover {
-		background: #f2f2f2;
-	}
+    a.ttop:hover {
+        background: #f2f2f2;
+    }
