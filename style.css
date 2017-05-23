@@ -209,6 +209,7 @@ input {
 
 /*Ablesen results*/
 table.event {
+    padding-left: 10px;
     width: 100%;
 }
 
