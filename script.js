@@ -29,7 +29,7 @@ $( document ).ready(function() {
       if (validateInput(val)) {
           $('#tableAblesen').append('<tr><td>' + $("input[name=nutzerkennung]").val() + '</td><td>' + $("input[name=verbrauchswert]").val() + '</td><td>' + heute +'</td></tr>');
       } else {
-        $("#btnAblesen").after('<p id="fehlermeldung">' + "Falsche Nutzerkennung! Die Nutzerkennung muss aus den Initialen Ihres Namens und den letzten beiden Ziffern ihrer Matrikelnummer bestehen" + '</p>')
+        $("#btnAblesen").after('<p id="fehlermeldung">' + "Falsche Nutzerkennung! Die Nutzerkennung muss aus den Initialen Ihres Namens und den letzten beiden Ziffern Ihrer Matrikelnummer bestehen" + '</p>')
         console.log();
       }
     });
