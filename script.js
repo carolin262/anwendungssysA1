@@ -10,7 +10,7 @@ var strom = randomNumberFromRange(0, parseInt(document.getElementById("maxstrom"
 
 function randomNumberFromRange(min,max)
 {
-    return Math.floor(Math.random()*(max-min+1)+min);
+    return (Math.random()*(max-min+1)+min).toFixed(1);
 }
 
 function validateInput(val) {
