@@ -34,7 +34,6 @@ $( document ).ready(function() {
       } else {
         $("#btnAblesen").after('<p id="fehlermeldung">' + "Falsche Nutzerkennung! Die Nutzerkennung muss"
         + " aus den Initialen Ihres Namens und den letzten beiden Ziffern ihrer Matrikelnummer bestehen" + '</p>')
-        console.log();
       }
     });
 
