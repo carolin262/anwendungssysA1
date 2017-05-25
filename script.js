@@ -19,8 +19,8 @@ function validateInput(val) {
 
 //JQuery
 $( document ).ready(function() {
-		$("#spannung").html(spannung);
-		$("#strom").html(strom);
+		$("#spannung").html(spannung + "V");
+		$("#strom").html(strom + "A");
     
     if(strom > parseInt(document.getElementById("maxstrom").innerHTML)){
       $("#warnung").css("display", "block");
