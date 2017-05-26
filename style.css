@@ -25,7 +25,6 @@ hr {
     position: fixed;
     min-width: 100%;
     color: white;
-    overflow: hidden;
 }
 
 /*logo Group 46*/
@@ -161,6 +160,7 @@ tr.overview {
 
 td {
     padding: 10px;
+    min-width: 200px;
 }
 
 a.detailButton {
@@ -206,6 +206,7 @@ table.status {
     color: red;
     margin-top: 10px;
 }
+
 /*Ablesen form*/
 input {
     border: 1px solid #24425F;
