@@ -9,45 +9,43 @@
     <script type="text/javascript" src="./script.js" async></script>
 </head>
 
-<body onload="zufall();">
+<body>
 
-    <div class="headerBg">
-        <div class="menuBg">
-            <div class="menu">
-                <div class="logoFont">
-                    Group 46
-                </div>
-                <ul>
-                    <li><a class="activ" href="#">Verwaltung</a></li>
-                    <li><a href="./index.html">Startseite</a></li>
-                </ul>
+    <div class="menuBg">
+        <div class="menu">
+            <div class="logoFont">
+                Group 46
             </div>
+            <ul>
+                <li><a class="activ" href="./verwalten.html">Verwaltung</a></li>
+                <li><a href="./index.html">Startseite</a></li>
+            </ul>
         </div>
-        <div class="heading">
-            <p style="font-size:44px">Verwaltung: Smart Meter</p>
-            <div class="subHeading">
-                <div class="subHLeft">
-                    Eine einfache Web Applikation zum verwalten und überwachen von Smart Merters
-                </div>
-                <div class="subHRight">
-                    <a class="button" href="./verwalten.html">Zurück zur Übersicht</a>
-                </div>
+    </div>
+
+    <div class="heading">
+        <p style="font-size:44px">Verwaltung: Smart Meter</p>
+        <div class="subHeading">
+            <div class="subHLeft">
+                Eine einfache Web Applikation zum verwalten und überwachen von Smart Merters
+            </div>
+            <div class="subHRight">
+                <a class="button" href="./verwalten.html">Zurück zur Übersicht</a>
             </div>
         </div>
     </div>
 
     <div class="main">
         <div class="content">
-
             <table class="detail">
                 <tr class="detail">
-                    <td><img src="./media/image.png" height="340px" width="340px"></img></td>
+                    <td><img src="./media/image.png" height="340" width="340"></td>
                     <td>
-                        <h2>Gerätename: AB32942628 </h2>
+                        <h2>Gerätekennung: AB32942628</h2>
                         <table class="status">
                             <tr>
                                 <td>Maximale Belastung:</td>
-                                <td><p id="maxstrom">60</p></td>
+                                <td><p id="maxstrom">60.0</p></td>
                             </tr>
                             <tr>
                                 <td>Spannung:</td>
@@ -91,7 +89,7 @@
             <table class="event" id="tableAblesen">
                 <tr>
                     <th class="event">Nutzerkennung</th>
-                    <th class="event">Verbrauchswert </th>
+                    <th class="event">Verbrauchswert (in kWh)</th>
                     <th class="event">Datum</th>
                 </tr>
             </table>
